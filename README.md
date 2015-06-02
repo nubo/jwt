@@ -6,7 +6,7 @@ This package implements helpers for handling HMAC SHA-256 signed JSON Web Tokens
 
 ### Producing a Token
 
-```
+```go
 package main
 
 import (
@@ -32,7 +32,7 @@ func main() {
 
 ### Consuming a Token
 
-```
+```go
 package main
 
 import (
