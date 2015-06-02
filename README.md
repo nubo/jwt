@@ -1,4 +1,4 @@
-# jwt - a simple and incomplete library for handling JWT in Go
+# JWT - Helpers for Go [![Circle CI](https://circleci.com/gh/nubo/jwt/tree/develop.svg?style=svg)](https://circleci.com/gh/nubo/jwt/tree/develop)
 
 This package implements helpers for handling HMAC SHA-256 signed JSON Web Tokens ([RFC 7519](https://tools.ietf.org/html/rfc7519)) in Go.
 
