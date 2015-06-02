@@ -1,4 +1,4 @@
-# JWT - Helpers for Go [![Circle CI](https://circleci.com/gh/nubo/jwt/tree/develop.svg?style=svg)](https://circleci.com/gh/nubo/jwt/tree/develop)
+# JWT - Helpers for Go [![Circle CI](https://circleci.com/gh/nubo/jwt/tree/develop.svg?style=svg)](https://circleci.com/gh/nubo/jwt/tree/develop) [![GoDoc](https://godoc.org/github.com/nubo/jwt?status.svg)](https://godoc.org/github.com/nubo/jwt)
 
 This package implements helpers for handling HMAC SHA-256 signed JSON Web Tokens ([RFC 7519](https://tools.ietf.org/html/rfc7519)) in Go.
 
