@@ -1,4 +1,4 @@
-# JWT - Helpers for Go [![Circle CI](https://circleci.com/gh/nubo/jwt/tree/master.svg?style=svg)](https://circleci.com/gh/nubo/jwt/tree/master)
+# JWT - Helpers for Go [![Circle CI](https://circleci.com/gh/nubo/jwt/tree/develop.svg?style=svg)](https://circleci.com/gh/nubo/jwt/tree/develop) [![GoDoc](https://godoc.org/github.com/nubo/jwt?status.svg)](https://godoc.org/github.com/nubo/jwt)
 
 This package implements helpers for handling HMAC SHA-256 signed JSON Web Tokens ([RFC 7519](https://tools.ietf.org/html/rfc7519)) in Go.
 
@@ -18,15 +18,15 @@ import (
 
 func main() {
   claims := jwt.ClaimSet{
-		jwt.Issuer:   "example.com",
-		jwt.Audience: "example.com",
-		"lorem":      "ipsum",
-	}
-	token, err := claims.Sign("secret")
-	if err != nil {
-		log.Fatal(err)
-	}
-	fmt.Println(token)
+    jwt.Issuer:   "example.com",
+    jwt.Audience: "example.com",
+    "lorem":      "ipsum",
+  }
+  token, err := claims.Sign("secret")
+  if err != nil {
+    log.Fatal(err)
+  }
+  fmt.Println(token)
 }
 ```
 
@@ -36,10 +36,10 @@ func main() {
 package main
 
 import (
-	"fmt"
+  "fmt"
   "log"
 
-	"github.com/nubo/jwt"
+  "github.com/nubo/jwt"
 )
 
 func main() {
@@ -47,7 +47,7 @@ func main() {
 
 	token, ok := jwt.ParseAndVerify(rawToken, "secret")
 	if !ok {
-		log.Fatal("Invalid token")
+    log.Fatal("Invalid token")
 	}
 	fmt.Println("Type", token.Header.Type)
 	fmt.Println("Algorithm", token.Header.Algorithm)
