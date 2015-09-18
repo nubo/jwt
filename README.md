@@ -47,7 +47,7 @@ func main() {
 
 	token, ok := jwt.ParseAndVerify(rawToken, "secret")
 	if !ok {
-    log.Fatal("Invalid token")
+		log.Fatal("Invalid token")
 	}
 	fmt.Println("Type", token.Header.Type)
 	fmt.Println("Algorithm", token.Header.Algorithm)
